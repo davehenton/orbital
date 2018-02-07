@@ -11,5 +11,5 @@ node_js:
   - "node"
 after_success:
 after_script:
-  - nyc npm test --reporter=text-lcov
+  - nyc report --reporter=lcov
   - ./cc-test-reporter after-build --debug --exit-code $TRAVIS_TEST_RESULT
