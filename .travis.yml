@@ -12,4 +12,4 @@ node_js:
 after_success:
 after_script:
   - nyc report --reporter=lcov
-  - ./cc-test-reporter after-build --debug --exit-code $TRAVIS_TEST_RESULT
+  - ./cc-test-reporter after-build -t lcov --debug --exit-code $TRAVIS_TEST_RESULT
